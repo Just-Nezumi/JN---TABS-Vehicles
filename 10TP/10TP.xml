@@ -1,0 +1,518 @@
+<prefab version="1.6.2">
+	<group name="10TP" pos="-6.0 0.4 -0.2" rot="0.0 -180.0 0.0">
+		<script pos="0.0 0.0 0.1" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10tp.lua">
+			<group name="Texture" pos="0.0 -0.0 0.0" prop0="texture=12 0.5" prop1="blendtexture=5 0.15">
+				<vehicle name="10TP" tags="TABS Name=10tp" pos="0.0 0.0 0.1" sound="tank2" spring="0.5" damping="0.4" topspeed="53" acceleration="0.09" strength="6" antispin="1" antiroll="1" difflock="1" steerassist="0.5" friction="2">
+					<body name="Hull" tags="Part=Hull Spacing=0.2" pos="0.0 0.0 0.0" dynamic="true">
+						<vox tags="nocull RHA=20" pos="0.1 0.5 0.1" rot="0.0 180.0 0.0" density="10" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Hull">
+							<group name="Front Plates" pos="0.1 0.0 2.2">
+								<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="-0.9 0.4 0.4" rot="-142.15 0.0 0.0" size="17 1 11" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate" offset="0.0 0.0 0.0">
+									<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.7 0.0 1.04" size="7 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate" offset="8.0 0.0 12.0"/>
+									<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.3 0.0 1.04" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate" offset="8.0 0.0 12.0"/>
+									<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.0 0.025 0.225" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate" offset="0.0 0.0 12.0"/>
+									<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="1.6 0.025 0.125" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate" offset="16.0 0.0 12.0"/>
+									<voxbox name="Upper_Front_Plate01" tags="nocull RHA=20" pos="0.3 0.1 0.6" rot="150.7 180.0 0.0" size="3 1 4" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate01" offset="0.0 0.0 0.0">
+										<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.0 0.0 0.215" rot="30.0 0.0 0.0" size="1 1 2" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate01" offset="0.0 0.0 0.0"/>
+										<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.2 -0.025 0.1" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate01" offset="2.0 0.0 0.0"/>
+									</voxbox>
+									<voxbox name="Upper_Front_Plate02" tags="nocull RHA=20" pos="1.7 0.1 0.6" rot="150.7 180.0 0.0" size="3 1 4" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate02" offset="0.0 0.0 0.0">
+										<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.2 0.0 0.215" rot="30.0 0.0 0.0" size="1 1 2" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate02" offset="2.0 0.0 5.0"/>
+										<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.0 -0.025 0.1" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Front_Plate02" offset="0.0 0.0 0.0"/>
+									</voxbox>
+									<vox tags="nocull RHA=20 No_Collide" pos="1.1 -0.01 0.9" rot="0.0 -180.0 0.0" prop="true" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Divers_Hatch">
+										<joint pos="0.2 0.05 -0.2" rot="180.0 -90.0 0.0" type="hinge" rotstrength="0.05" rotspring="0" limits="0 45"/>
+										<joint pos="-0.2 0.05 -0.2" rot="180.0 -90.0 0.0" type="hinge" rotstrength="0.05" rotspring="0" limits="0 45"/>
+										<vox tags="nocull RHA=20 No_Collide" pos="0.175 0.05 0.05" rot="180.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="viewport"/>
+										<vox tags="nocull RHA=20 No_Collide" pos="-0.175 0.05 0.05" rot="180.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="viewport"/>
+									</vox>
+									<vox tags="nocull RHA=20 No_Collide" pos="1.1 -0.01 0.6" rot="0.0 180.0 0.0" prop="true" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Lower_Divers_Hatch">
+										<joint pos="0.2 0.05 0.1" rot="-180.0 90.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 145"/>
+										<joint pos="-0.2 0.05 0.1" rot="-180.0 90.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 145"/>
+									</vox>
+								</voxbox>
+								<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="-0.6 0.6 0.11" rot="-104.0 0.0 0.0" size="5 1 4" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_Thing_Bottom" offset="0.0 0.0 0.0">
+									<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.0 0.0 0.313" size="5 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_Thing_Bottom" offset="0.0 0.0 5.0"/>
+									<vox tags="nocull RHA=20" pos="0.2 -0.05 0.25" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_Thing_Bit"/>
+								</voxbox>
+								<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="-0.1 1.1 -0.5" rot="169 180.0 0.0" size="5 1 5" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_Thing_Top" offset="0.0 0.0 0.0">
+									<voxbox name="Upper_Front_Plate" tags="nocull RHA=20" pos="0.0 0.0 0.42" size="5 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_Thing_Top" offset="-0.0 0.0 6.0"/>
+								</voxbox>
+								<voxbox name="Lower_Front_Plate" tags="nocull RHA=20" pos="-0.9 0.0 0.0" rot="-26.6 0.0 0.0" size="17 1 4" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Lower_Front_Plate" offset="0.0 0.0 0.0">
+									<voxbox name="Lower_Front_Plate" tags="nocull RHA=20" pos="0.0 0.0 0.347" size="17 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Lower_Front_Plate" offset="0.0 -0.0 5.0"/>
+								</voxbox>
+							</group>
+							<group name="Rear Plates" pos="0.0 0.0 -1.9">
+								<voxbox name="Upper_Rear_Plate" tags="nocull RHA=8" pos="1.0 0.6 -0.7" rot="-160.35 -180.0 0.0" density="10" size="19 1 14" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Rear_Plate" offset="0.0 0.0 0.0">
+									<voxbox name="Upper_Rear_Plate" tags="nocull RHA=8" pos="0.0 0.0 1.387" density="10" size="19 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Rear_Plate" offset="-0.0 -0.0 15.0"/>
+									<voxbox name="Upper_Rear_Plate" tags="nocull RHA=8" pos="0.0 0.025 0.0" density="10" size="1 1 14" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Rear_Plate" offset="0.0 0.0 0.0"/>
+									<voxbox name="Upper_Rear_Plate" tags="nocull RHA=8" pos="1.8 0.025 0.0" density="10" size="1 1 14" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Upper_Rear_Plate" offset="18.0 0.0 0.0"/>
+									<vox tags="nocull RHA=8 No_Collide" pos="0.5 -0.01 0.3" prop="true" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Engine_Hatch1">
+										<joint pos="0.4 0.05 0.1" rot="180.0 -180.0 0.0" type="hinge" rotspring="0.01" limits="0 160"/>
+										<joint pos="0.4 0.05 -0.2" rot="180.0 -180.0 0.0" type="hinge" rotspring="0.01" limits="0 160"/>
+										<vox tags="nocull RHA=8 No_Collide" pos="-0.35 0.05 -0.05" rot="-180.0 90.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="viewport"/>
+									</vox>
+									<vox tags="nocull RHA=8 No_Collide" pos="1.4 -0.01 0.3" prop="true" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Engine_Hatch2">
+										<joint pos="-0.4 0.05 0.1" rot="-180.0 0.0 0.0" type="hinge" rotspring="0.01" limits="0 160"/>
+										<joint pos="-0.4 0.05 -0.2" rot="-180.0 0.0 0.0" type="hinge" rotspring="0.01" limits="0 160"/>
+										<vox tags="nocull RHA=8 No_Collide" pos="0.35 0.05 -0.05" rot="180.0 -90.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="viewport"/>
+									</vox>
+									<vox tags="nocull RHA=8 No_Collide" pos="0.9 -0.01 0.9" prop="true" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Engine_Hatch3">
+										<joint pos="0.2 0.05 0.3" rot="-180.0 90.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 160"/>
+										<joint pos="-0.1 0.05 0.3" rot="-180.0 90.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="0 160"/>
+										<vox tags="nocull RHA=8 No_Collide" pos="0.05 0.05 -0.35" rot="180.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="viewport"/>
+									</vox>
+									<vox tags="nocull RHA=8" pos="1.0 0.05 0.95" rot="180.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Radiator_Outlet"/>
+									<vox tags="nocull RHA=8" pos="1.0 0.025 0.95" rot="180.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Radiator_OutletB"/>
+								</voxbox>
+								<voxbox name="Lower_Rear_Plate" tags="nocull RHA=20" pos="-0.9 0.3 -0.7" rot="57.0 0.0 0.0" density="10" size="19 1 3" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Lower_Rear_Plate" offset="0.0 0.0 0.0">
+									<voxbox name="Lower_Rear_Plate" tags="nocull RHA=20" pos="0.0 0.0 0.26" density="10" size="19 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Lower_Rear_Plate" offset="0.0 0.0 4.0"/>
+								</voxbox>
+							</group>
+							<group name="Fenders" pos="0.1 0.4 0.0">
+								<voxbox name="Left_Fender" tags="nocull" pos="0.8 0.4 1.7" rot="180.0 0.0 0.0" size="4 1 29" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Left_Fender" offset="0.0 0.0 14.0">
+									<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.4 0.0 0.0" rot="-7.0 -180.0 0.0" size="4 1 11" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Left_Fender" offset="0.0 0.0 2.0">
+										<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 1.1" rot="-45.0 0.0 0.0" size="4 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Left_Fender" offset="0.0 0.0 0.0"/>
+									</voxbox>
+									<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.1 0.0 2.9" rot="-3.5" size="3 1 14" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Left_Fender" offset="1.0 0.0 44.0">
+										<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 1.4" rot="-45.0 0.0 0.0" size="3 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Left_Fender" offset="1.0 0.0 59.0">
+											<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 0.1" rot="-40.0 0.0 0.0" size="3 1 2" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Left_Fender" offset="1.0 0.0 61.0"/>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+								<voxbox name="Right_Fender" tags="nocull" pos="-1.3 0.4 1.7" rot="180.0 0.0 0.0" size="4 1 29" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Right_Fender" offset="0.0 0.0 14.0">
+									<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.4 0.0 0.0" rot="-7.0 -180.0 0.0" size="4 1 11" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Right_Fender" offset="0.0 0.0 2.0">
+										<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 1.1" rot="-45.0 0.0 0.0" size="4 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Right_Fender" offset="0.0 0.0 0.0"/>
+									</voxbox>
+									<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 2.9" rot="-3.5" size="3 1 14" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Right_Fender" offset="0.0 0.0 44.0">
+										<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 1.4" rot="-45.0 0.0 0.0" size="3 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Right_Fender" offset="0.0 0.0 59.0">
+											<voxbox name="Lower_Rear_Plate" tags="nocull" pos="0.0 0.0 0.1" rot="-40.0 0.0 0.0" size="3 1 2" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Right_Fender" offset="0.0 0.0 61.0"/>
+										</voxbox>
+									</voxbox>
+								</voxbox>
+							</group>
+							<group name="Wheels" pos="0.1 -0.4 0.1">
+								<group name="Left" pos="1.0 0.0 0.0">
+									<wheel name="Idler" pos="-0.1 0.65 2.35" rot="0.0 180.0 0.0" drive="-1" steer="0.0" travel="0.0">
+										<vox pos="-0.2 -0.25 0.05" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Idler"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="-0.1 0.4 1.6" rot="0.0 -180.0 0.0" drive="1" steer="0.25">
+										<vox pos="-0.2 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="-0.1 0.4 0.6" rot="0.0 180.0 0.0" drive="1" steer="0.25">
+										<vox pos="-0.2 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="-0.1 0.4 -0.5" rot="0.0 180.0 0.0" drive="1" steer="-0.25">
+										<vox pos="-0.2 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="-0.1 0.4 -1.5" rot="0.0 180.0 0.0" drive="1" steer="-0.25">
+										<vox pos="-0.2 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Sprocket" pos="-0.1 0.6 -2.3" rot="0.0 180.0 0.0" drive="-1" steer="0.0" travel="0.0">
+										<vox pos="-0.2 -0.3 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Sprocket"/>
+									</wheel>
+								</group>
+								<group name="Right" pos="-1.2 0.0 0.0">
+									<wheel name="Idler" pos="0.2 0.65 2.35" rot="0.0 180.0 0.0" drive="-1" steer="0.0" travel="0.0">
+										<vox pos="0.1 -0.25 0.05" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Idler"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="0.2 0.4 1.6" rot="0.0 -180.0 0.0" drive="1" steer="0.25">
+										<vox pos="0.1 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="0.2 0.4 0.6" rot="0.0 180.0 0.0" drive="1" steer="0.25">
+										<vox pos="0.1 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="0.2 0.4 -0.5" rot="0.0 180.0 0.0" drive="1" steer="-0.25">
+										<vox pos="0.1 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Road_Wheel" pos="0.3 0.4 -1.5" rot="0.0 180.0 0.0" drive="1" steer="-0.25">
+										<vox pos="0.2 -0.4 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Road_Wheel"/>
+									</wheel>
+									<wheel name="Sprocket" pos="0.2 0.6 -2.3" rot="0.0 180.0 0.0" drive="-1" steer="0.0" travel="0.0">
+										<vox pos="0.1 -0.3 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Sprocket"/>
+									</wheel>
+								</group>
+							</group>
+							<group name="Extra Details" pos="0.0 0.0 -0.1">
+								<vox tags="nocull RHA=8" pos="0.0 0.0 0.0" density="10" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Hull_Bits"/>
+								<vox tags="nocull RHA=8" pos="0.0 0.975 -0.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Extra_Hull_Bits"/>
+								<vox tags="nocull RHA=8" pos="-0.175 1.075 2.2" texture="4 0.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Headlight">
+									<vox tags="nocull RHA=8" pos="0.02" texture="4 0.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Headlight"/>
+									<vox tags="nocull RHA=8" pos="0.02 0.02" texture="4 0.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Headlight"/>
+									<vox tags="nocull RHA=8" pos="0.0 0.02" texture="4 0.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Headlight"/>
+									<voxbox pos="0.01 -0.1 -0.075" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Headlight" offset="0.0 0.0 1.0"/>
+								</vox>
+								<light pos="-0.14 1.14 2.3" rot="0.0 0.0 0.0" type="cone" color="0.98 0.95 0.79" scale="1" penumbra="1" size="0.1 0.1" reach="5"/>
+								<vox pos="0.825 0.375 -2.475" texture="4 0.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Rearlight"/>
+								<vox pos="0.3 0.1 1.6" rot="-3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Seat"/>
+								<vox pos="0.3 0.1 2.1" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Gears"/>
+								<vox pos="-0.3 0.1 1.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="SeatB"/>
+								<vox pos="-1.075 0.8 1.05" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Box"/>
+								<vox tags="nocull No_Collide" pos="-1.075 0.775 0.7" rot="0.0 0.0 5.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Strap"/>
+								<vox tags="nocull No_Collide" pos="-1.075 0.775 -0.8" rot="0.0 0.0 5.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Strap"/>
+								<vox tags="nocull No_Collide" pos="-1.075 0.775 -0.3" rot="0.0 0.0 5.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Strap"/>
+								<vox tags="nocull No_Collide" pos="1.175 0.775 -0.9" rot="0.0 180.0 5.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Strap"/>
+								<vox tags="nocull No_Collide" pos="1.175 0.775 0.6" rot="0.0 180.0 5.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Strap"/>
+								<vox tags="nocull No_Collide" pos="1.175 0.775 -0.4" rot="0.0 180.0 5.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Strap"/>
+								<vox tags="nocull" pos="1.1 0.75 -1.85" rot="-3.5" texture="4 0.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust1">
+									<vox tags="nocull" pos="-0.05 0.05 -0.6" texture="4 0.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2"/>
+									<vox tags="nocull" pos="0.05 0.075 0.6" rot="10.0 -180.0 0.0" texture="4 0.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2">
+										<voxbox tags="nocull" pos="0.1 0.0 -0.1" rot="-30.0 -180.0 0.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+											<voxbox tags="nocull" pos="0.1 0.0 0.1" rot="-45.0 -180.0 0.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+												<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+													<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+														<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+															<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="10.0 0.0 -3.0" texture="4 0.6" size="1 6 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+																<voxbox tags="nocull" pos="0.0 0.6 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+																	<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0"/>
+																</voxbox>
+															</voxbox>
+														</voxbox>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</vox>
+								</vox>
+								<vox tags="nocull" pos="-1.0 0.75 -1.85" rot="-3.5" texture="4 0.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust1">
+									<vox tags="nocull" pos="-0.05 0.05 -0.6" texture="4 0.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2"/>
+									<vox tags="nocull" pos="0.05 0.075 0.6" rot="10.0 -180.0 0.0" texture="4 0.6" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2">
+										<voxbox tags="nocull" pos="0.1 0.0 -0.1" rot="-30.0 -180.0 0.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+											<voxbox tags="nocull" pos="0.1 0.0 0.1" rot="-45.0 -180.0 0.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+												<voxbox tags="nocull" pos="0.1 0.1 0.1" rot="0.0 180.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+													<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+														<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+															<voxbox tags="nocull" pos="0.0 0.1 0.1" rot="3.0 90.0 -10.0" texture="4 0.6" size="1 6 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+																<voxbox tags="nocull" pos="0.1 0.6 0.0" rot="0.0 -90.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0">
+																	<voxbox tags="nocull" pos="0.0 0.1 0.0" rot="0.0 0.0 -30.0" texture="4 0.6" size="1 1 1" brush="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Exhaust2" offset="0.0 0.0 0.0"/>
+																</voxbox>
+															</voxbox>
+														</voxbox>
+													</voxbox>
+												</voxbox>
+											</voxbox>
+										</voxbox>
+									</vox>
+								</vox>
+								<location name="exhaust" tags="exhaust" pos="1.1 0.8 -2.6" rot="3.5 180.0 0.0"/>
+								<location name="exhaust" tags="exhaust" pos="-1.0 0.8 -2.6" rot="3.5 180.0 0.0"/>
+								<light name="blowOut" tags="blowOut" pos="0.3 0.9 2.1" rot="-45.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							</group>
+							<group name="Tracks_R" pos="-1.1 -0.4 0.1" rot="0.0 0.0 0.0">
+								<light name="track" tags="track suspension" pos="0.05 -0.025 1.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 -0.025 1.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 -0.025 0.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 -0.025 0.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 -0.025 -0.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 -0.025 -1.1" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 -0.025 -1.7" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.275 -2.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.375 -2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.525 -2.65" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.675 -2.65" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.8 -2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.925 -2.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.95 -2.3" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.94 -2.1" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.94 -1.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.94 -0.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.94 0.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.94 0.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.94 1.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.94 2.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.95 2.35" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.925 2.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.825 2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.65 2.65" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.5 2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.05 0.375 2.5" rot="0.0 0.0 0.0" size="0.05"/>
+							</group>
+							<group name="Tracks_L" pos="1.0 -0.4 0.1" rot="0.0 0.0 0.0">
+								<light name="track" tags="track suspension" pos="0.15 -0.025 1.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 -0.025 1.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 -0.025 0.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 -0.025 0.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 -0.025 -0.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 -0.025 -1.1" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 -0.025 -1.7" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.275 -2.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.375 -2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.525 -2.65" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.675 -2.65" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.8 -2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.925 -2.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.95 -2.3" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.94 -2.1" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 0.94 -1.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 0.94 -0.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 0.94 0.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 0.94 0.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.15 0.94 1.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.94 2.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.95 2.35" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.925 2.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.825 2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.65 2.65" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.5 2.6" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track" pos="0.15 0.375 2.5" rot="0.0 0.0 0.0" size="0.05"/>
+							</group>
+							<group name="Engine Stuff" pos="0.0 0.0 -1.4">
+								<vox tags="Part=Engine" pos="0.0 0.1 0.4" density="20" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Engine"/>
+								<vox tags="Part=Engine" pos="0.0 0.2 1.0" density="20" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Belt"/>
+								<vox pos="-0.6 0.1 0.7" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Radiator_R"/>
+								<vox pos="0.6 0.1 0.7" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Radiator_L"/>
+							</group>
+							<group name="Transmission" pos="0.0 0.0 -1.8" rot="0.0 0.0 0.0">
+								<vox tags="RHA=20 Part=Transmission" pos="0.0 0.1 -0.1" density="20" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Transmission"/>
+								<vox tags="RHA=20 Part=Transmission" pos="0.0 0.125 0.0" rot="10.0 0.0 0.0" density="20" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="TransmissionB"/>
+							</group>
+							<location name="Player" tags="player" pos="0.3 0.9 1.35" rot="0.0 180.0 0.0">
+								<location name="player_seat" tags="name=player_seat" pos="-0.05 -0.55 -0.2" rot="70.0 0.0 0.0"/>
+								<location name="ik_head" tags="ik_head" pos="0.0 0.0 0.0" rot="0.0 90.0 0.0"/>
+								<location name="ik_hand_l" tags="ik_hand_l" pos="-0.2 -0.35 -0.4" rot="0.0 90.0 0.0"/>
+								<location name="ik_hand_r" tags="ik_hand_r" pos="0.2 -0.35 -0.4" rot="0.0 90.0 0.0"/>
+								<location name="ik_foot_l" tags="ik_foot_l" pos="-0.05 -0.7 -0.8" rot="0.0 90.0 40.0"/>
+								<location name="ik_foot_r" tags="ik_foot_r" pos="0.1 -0.7 -0.7" rot="0.0 90.0 40.0"/>
+							</location>
+							<group name="Ammo" pos="0.1 0.1 0.6">
+								<vox pos="0.7 0.0 0.0" rot="0.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_Box">
+									<vox tags="Ammo_Size=3 RHA=5 Range_Multiplier=3 ID=wz37cannon Ammo_Count=25" pos="0.0 0.5 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_1"/>
+									<vox tags="Ammo_Size=3 RHA=5 Range_Multiplier=3 ID=wz37cannon Ammo_Count=25" pos="0.0 0.3 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_1"/>
+								</vox>
+								<vox pos="-0.8 0.0 0.0" rot="0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_Box">
+									<vox tags="Ammo_Size=3 RHA=5 Range_Multiplier=3 ID=wz37cannon Ammo_Count=20" pos="0.0 0.5 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_1"/>
+									<vox tags="Ammo_Size=3 RHA=5 Range_Multiplier=3 ID=wz37cannon Ammo_Count=25" pos="0.0 0.3 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_1"/>
+								</vox>
+							</group>
+							<vox tags="Fuel_Size=125 RHA=5" pos="0.6 0.1 -0.2" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Fuel_Tank"/>
+							<vox tags="Fuel_Size=125 RHA=5" pos="-0.5 0.1 -0.3" rot="0.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="Fuel_Tank"/>
+						</vox>
+					</body>
+					<body name="Turret" tags="Part=Turret Index=1 Rot_Speed=12" pos="0.05 1.1 -0.65" dynamic="true">
+						<vox name="Turret" tags="nocull RHA=16 component=turret turretGroup=mainTurret" pos="0.0 0.0 0.2" rot="0.0 180.0 0.0" density="10" strength="10" prop="false" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="turret">
+							<joint tags="Turret_Joint_X" pos="0.0 -0.5 0.1" rot="-90.0 -180.0 0.0" type="hinge" size="0.1" rotstrength="0.9" rotspring="0"/>
+							<vox tags="nocull RHA=17" pos="0.0 0.65 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="mantlet"/>
+							<vox pos="-0.3 1.1 0.0" rot="0.0 0.0 0.0" prop="true" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="turret_hatch">
+								<joint pos="0.1 0.05 0.15" rot="0.0 90.0 0.0" type="hinge" rotspring="0" limits="0 150"/>
+								<vox pos="0.1 0.05 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="viewport"/>
+							</vox>
+							<light name="Commander View" tags="commanderView" pos="-0.2 1.65 0.15" rot="0.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							<light name="blowOut" tags="blowOut" pos="-0.2 1.05 -0.05" rot="-90.0 -180.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							<light name="Gun Sight" tags="Sight=7tp" pos="0.05 0.9 1.35" rot="0.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							<group name="connection" pos="0.0 -0.2 0.05" rot="0.0 180.0 0.0">
+								<voxbox tags="invisible" pos="-0.2 0.2 -0.1" size="4" material="hardmetal"/>
+								<voxbox tags="invisible" pos="-0.05 0.2 -0.1" rot="0.0 0.0 -90.0" size="5 1 1" offset="0.0 0.0 0.0" material="hardmetal"/>
+							</group>
+							<vox tags="nocull RHA=16" pos="-0.05 0.7 -0.7" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="rearbox"/>
+							<vox tags="nocull RHA=10 Part=Turret_Ring" pos="0.0 0.3 0.1" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="turret_ring"/>
+							<vox tags="nocull Part=sight" pos="0.2 0.9 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="sight"/>
+							<vox tags="nocull Part=sight" pos="-0.0 0.85 0.5" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="gunsight"/>
+							<vox tags="Ammo_Size=3 RHA=5 Range_Multiplier=3 ID=wz37cannon Ammo_Count=4" pos="-0.375 0.55 -0.275" rot="0 -35" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="ammo_2">
+								<voxbox tags="nocull RHA=10" pos="0.001 -0.05 0.1" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+								<voxbox tags="nocull RHA=10" pos="0.0 -0.05 0.099" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+								<voxbox tags="nocull RHA=10" pos="0.0 -0.05 0.101" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+								<voxbox tags="nocull RHA=10" pos="0.0 0.275 0.099" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+								<voxbox tags="nocull RHA=10" pos="0.0 0.275 0.101" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+								<voxbox tags="nocull RHA=10" pos="0.001 0.275 0.1" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+							</vox>
+							<light name="Gun Sight" tags="Sight=Periscope" pos="0.25 1.25 0.25" rot="0.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+						</vox>
+					</body>
+					<body name="Cannon" tags="Part=Weapon Turret_Index=1 Rot_Speed=2.8" pos="0.05 1.4 -3.2" dynamic="true">
+						<vox tags="nocull RHA=20" pos="0.0 0.35 1.75" rot="0.0 180.0 0.0" texture="4 0.2" density="1.5" prop="false" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="gun/breach">
+							<vox tags="nocull RHA=12" pos="0.175 0.1 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_barrel">
+								<voxbox pos="-0.05 0.01 0.28" size="1 1 1" color="0.14 0.14 0.14"/>
+								<vox pos="-0.05 -0.05 -0.5" rot="0.0 0.0 0.0" collide="false" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_handle"/>
+							</vox>
+							<vox tags="nocull RHA=10" pos="-0.05 0.05 0.0" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="gun"/>
+							<joint name="GunJoint" tags="Turret_Joint_Y" pos="-0.2 0.2 -0.15" rot="0.0 -90.0 0.0" type="hinge" rotspring="0" limits="-12 20" sound="true"/>
+							<joint tags="Turret_Joint_Y" pos="0.3 0.2 -0.15" rot="0.0 -90.0 0.0" type="hinge" rotspring="0" limits="-12 20" sound="false"/>
+							<light name="Cannon Emitter" tags="Weapon ID=wz37cannon" pos="-0.1 0.2 1.2" rot="0.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							<light name="MG Emitter" tags="Weapon ID=wz30" pos="0.175 0.15 0.45" rot="0.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							<vox tags="nocull RHA=10 Barrel" pos="-0.1 0.1 -0.4" density="1.3" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="breech"/>
+							<vox tags="nocull RHA=10 Barrel" pos="-0.05 0.15 0.5" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="barrel">
+								<vox tags="nocull RHA=10 Barrel" pos="0.09 0.0 -0.6" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="muzzle_break"/>
+								<vox tags="nocull RHA=10 Barrel" pos="0.11 0.0 -0.6" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="muzzle_break"/>
+								<vox tags="nocull RHA=10 Barrel" pos="0.11 0.01 -0.6" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="muzzle_break"/>
+								<vox tags="nocull RHA=10 Barrel" pos="0.09 0.01 -0.6" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="muzzle_break"/>
+								<vox tags="nocull RHA=10 Barrel" pos="0.09 -0.01 -0.6" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="muzzle_break"/>
+								<vox tags="nocull RHA=10 Barrel" pos="0.11 -0.01 -0.6" rot="0 180" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="muzzle_break"/>
+							</vox>
+							<vox pos="0.35 0.0 -0.1" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="guncover_side"/>
+							<vox pos="-0.35 0.0 -0.1" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="guncover_side"/>
+							<vox pos="0.05 0.35 -0.1" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="guncover_top"/>
+						</vox>
+					</body>
+					<body name="Hull_MG" tags="Part=Weapon Ball" pos="0.35 0.75 -1.4" dynamic="true">
+						<vox tags="nocull RHA=12" pos="0.0 0.45 -0.85" rot="0.0 180.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_barrel">
+							<voxbox pos="-0.05 0.01 0.28" size="1 1 1" color="0.14 0.14 0.14"/>
+							<vox tags="Part=Breech" pos="-0.05 -0.05 -0.5" rot="0.0 0.0 0.0" collide="false" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_handle"/>
+							<light name="MG Emitter" tags="Weapon ID=wz30" pos="0.025 0.05 0.45" type="cone" angle="20" size="0.5" reach="0.5"/>
+							<joint tags="Turret_Joint_Y" pos="0.0 0.0 -0.2" size=".15" rotstrength="0" rotspring="0"/>
+							<vox tags="nocull RHA=20" pos="-0.05 0.05 0.0" rot="90.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="MG_Thing_Bit"/>
+							<light name="Gun Sight" tags="Sight=Port" pos="0.15 0.15 0.35" rot="0.0 0.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+						</vox>
+					</body>
+				</vehicle>
+			</group>
+			<group name="track pieces" pos="-1.7 0.1 0.1" prop0="texture=12 0.5" prop1="blendtexture=5 0.15" prop2="tags=nocull">
+				<group name="11tracks" pos="0.0 0.0 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.1 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.2 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.3 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.4 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.5 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.6 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.7 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.8 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 0.9 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 1.0 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+				<group name="11tracks" pos="0.0 1.1 0.0">
+					<instance pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 -0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.2" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.4" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.6" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 0.8" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+					<instance pos="0.0 0.0 1.0" rot="0.0 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml"/>
+				</group>
+			</group>
+		</script>
+	</group>
+</prefab>
+

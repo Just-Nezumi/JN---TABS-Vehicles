@@ -1,0 +1,8 @@
+<prefab version="1.6.2">
+	<group name="instance=MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/track.xml" pos="0.0 0.0 -1.0" rot="0.0 0.0 0.0">
+		<body tags="unassignedtrackpiece" pos="0.0 0.0 0.0" dynamic="true">
+			<vox pos="-0.05 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/10TP/10TP.vox" object="track"/>
+		</body>
+	</group>
+</prefab>
+
