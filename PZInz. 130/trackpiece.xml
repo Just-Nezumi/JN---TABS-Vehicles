@@ -1,0 +1,8 @@
+<prefab version="1.7.0">
+	<group pos="0.0 0.0 2.8">
+		<body tags="unassignedtrackpiece" pos="0.0 0.0 0.0" rot="0.0 0.0 0.0" dynamic="true">
+			<vox pos="-0.05 0.0 0.0" file="MOD/vehicles/Poland/WW2/Tanks/Light Tanks/PZInz. 130/PZInz 130.vox" object="track"/>
+		</body>
+	</group>
+</prefab>
+
