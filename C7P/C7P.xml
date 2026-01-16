@@ -1,0 +1,611 @@
+<prefab version="1.7.0">
+	<group name="instance=MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.xml" pos="4.9 3.4 -6.5" rot="0.0 0.0 0.0">
+		<script pos="0.4 0.0 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Tanks/Light Tanks/7TP/7tp.lua">
+			<group name="Texture" prop0="texture=12 0.5" prop1="blendtexture=5 0.15">
+				<vehicle name="C7P" tags="TABS Name=C7P" pos="0.0 0.1 0.0" rot="0.0 0.0 0.0" driven="false" sound="tank2" spring="0.5" damping="0.4" topspeed="26" acceleration="0.09" strength="3" antispin="1" antiroll="1" difflock="1" steerassist="0.5" friction="2">
+					<body name="Hull" tags="Part=Hull Spacing=0.21" pos="-0.1 -0.1 0.0" dynamic="true">
+						<vox tags="RHA=17 nocull" pos="0.1 0.4 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hull">
+							<group name="Front_Plates" pos="0.0 0.0 -2.0">
+								<group name="Front_Plate_1" pos="0.0 0.0 0.1" rot="-35.0 0.0 0.0">
+									<vox tags="RHA=12 nocull" pos="0.0 0.0 0.1" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Front_Plate_1"/>
+									<group name="Front_Plate_2" pos="0.0 0.4 0.0" rot="27.0 0.0 0.0">
+										<vox tags="RHA=17 nocull" pos="0.0 0.0 0.1" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Front_Plate_2"/>
+									</group>
+								</group>
+								<group name="Front_Plate_3" pos="0.0 0.7 0.625" rot="-10.0 0.0 0.0">
+									<vox tags="RHA=5 nocull" pos="0.0 -0.1826 -0.3985" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Front_Plate_3">
+										<vox pos="0.2 0.1 0.0" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hatch_1">
+											<voxbox tags="nocull RHA=5" pos="-0.15 0.05 0.1" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+											<joint pos="0.3 0.05 0.0" rot="0 180" type="hinge" rotstrength="0.0" rotspring="0" limits="-0 110"/>
+										</vox>
+										<vox pos="-0.3 0.1 0.0" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hatch_1">
+											<voxbox tags="nocull RHA=5" pos="0.15 0.05 0.1" rot="0 90" size="2 1 1" material="metal" color="0.3 0.29 0.2"/>
+											<joint pos="-0.2 0.05 0.0" rot="0 0" type="hinge" rotstrength="0.0" rotspring="0" limits="-0 110"/>
+										</vox>
+									</vox>
+								</group>
+							</group>
+							<group name="Rear_Plates" pos="0.0 0.0 1.9">
+								<group name="Rear_Plate_1" pos="0.0 0.0 -0.3" rot="-10.0 0.0 0.0">
+									<vox tags="RHA=10 nocull" pos="0.0 0.0 0.2" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Plate_1"/>
+									<vox pos="0.0 0.0 0.325" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Plate_1B"/>
+									<group name="Rear_Plate_2" pos="0.0 0.0 0.325" rot="-75.0 0.0 0.0">
+										<vox tags="nocull RHA=10" pos="0.0 0.0 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Plate_2">
+											<group name="Rear_Plate_2" pos="0.0 0.0 0.25" rot="-90.0 0.0 0.0">
+												<vox tags="RHA=5 nocull" pos="0.0 0.0 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Plate_3">
+													<vox tags="nocull RHA=5" pos="-0.6 0.0 -0.1" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hatch_2">
+														<voxbox tags="nocull RHA=5" pos="-0.15 -0.05 -0.1" rot="0.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.3 0.29 0.2"/>
+														<joint pos="0.0 0.05 0.1" rot="-180.0 90.0 0.0" type="hinge" rotstrength="0.0" rotspring="0" limits="-0 110"/>
+													</vox>
+													<vox tags="nocull RHA=5" pos="0.6 0.0 -0.1" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hatch_2">
+														<voxbox tags="nocull RHA=5" pos="0.05 -0.05 -0.1" rot="0.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.3 0.29 0.2"/>
+														<joint pos="0.0 0.05 0.1" rot="-180.0 90.0 0.0" type="hinge" rotstrength="0.0" rotspring="0" limits="-0 110"/>
+													</vox>
+												</vox>
+											</group>
+											<group name="Fins" pos="0.8 0.0 -0.1">
+												<vox pos="-0.45 0.0 0.2" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.15" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.1" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.05" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.0" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.2" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.15" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.1" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.05" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-0.45 0.0 0.0" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-1.55 0.0 0.2" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-1.55 0.0 0.15" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-1.55 0.0 0.1" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-1.55 0.0 0.05" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+												<vox pos="-1.55 0.0 0.0" rot="90.0 90.0 30.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+											</group>
+											<vox tags="nocull RHA=5" pos="-0.05 -0.025 -0.35" rot="90.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hitch_Bottom"/>
+											<vox tags="nocull RHA=5" pos="-0.05 -0.125 0.0" rot="90.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Hitch_Main">
+												<voxbox tags="nocull RHA=5" pos="0.0 0.0 -0.05" rot="-90.0 -110.0 0.0" size="1 1 2" offset="-1.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+													<voxbox tags="nocull RHA=5" pos="0.1 0.0 0.0" rot="0.0 0.0 20.0" size="1 1 2" offset="-1.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+												</voxbox>
+												<voxbox tags="nocull RHA=5" pos="0.1 0.0 -0.05" rot="-90.0 -160.0 0.0" size="1 1 2" offset="-1.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+													<voxbox tags="nocull RHA=5" pos="0.0 0.1 0.0" rot="0.0 0.0 -20.0" size="1 1 2" offset="-1.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+												</voxbox>
+												<light tags="trailerhitch" pos="0.05 0.1 0.15" rot="0.0 0.0 0.0"/>
+											</vox>
+											<voxbox tags="nocull RHA=5" pos="-0.1 -0.05 0.0" size="2 1 2" offset="-1.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</vox>
+									</group>
+								</group>
+							</group>
+							<group name="Suspension" pos="0.0 -0.2 0.15" rot="0.0 0.0 0.0">
+								<vox tags="nocull" pos="-1.0 0.0 0.5" rot="0.0 180.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Suspension"/>
+								<vox tags="nocull" pos="1.1 0.0 0.5" rot="0.0 -180.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Suspension"/>
+								<vox tags="nocull" pos="1.0 0.0 -1.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Suspension"/>
+								<vox tags="nocull" pos="-1.1 0.0 -1.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Suspension"/>
+								<group name="Rollers" pos="0.0 0.5 0.0">
+									<group name="L" pos="-1.0 0.0 -0.4">
+										<vox pos="0.0 0.18 -1.097" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+										<vox pos="0.0 0.13 -0.29" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+										<vox pos="0.0 0.08 0.506" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+										<vox pos="0.0 0.02 1.314" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+									</group>
+									<group name="R" pos="1.0 0.0 -0.4">
+										<vox pos="0.0 0.18 -1.097" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+										<vox pos="0.0 0.13 -0.29" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+										<vox pos="0.0 0.08 0.506" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+										<vox pos="0.0 0.02 1.314" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Small_Wheel" scale="1"/>
+									</group>
+								</group>
+							</group>
+							<group name="Fenders" pos="0.0 0.2 0.0">
+								<vox pos="-1.1 0.16 -0.056" rot="3.5" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Fender_L">
+									<vox tags="nocull" pos="0.0 0.35 -1.8" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Light">
+										<light pos="0.05 0.15 -0.1" rot="0.0 180.0 0.0" type="cone" color="0.98 0.95 0.79" scale="1" penumbra="1" size="0.1 0.1" reach="5"/>
+									</vox>
+									<vox tags="nocull" pos="0.05 0.4 1.2" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Box_1"/>
+								</vox>
+								<vox pos="1.0 0.16 -0.056" rot="3.5" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Fender_R">
+									<vox tags="nocull" pos="0.0 0.35 -1.8" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Light">
+										<light pos="0.05 0.15 -0.1" rot="0.0 180.0 0.0" type="cone" color="0.98 0.95 0.79" scale="1" penumbra="1" size="0.1 0.1" reach="5"/>
+									</vox>
+									<vox tags="nocull" pos="0.0 0.35 1.35" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel_Holder">
+										<vox tags="nocull" pos="0.0 0.1 -0.2" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+										<vox tags="nocull" pos="0.0 0.1 0.2" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+									</vox>
+								</vox>
+							</group>
+							<group name="Superstructure" pos="0.0 0.1 -0.4">
+								<group name="2" pos="-1.1 0.6 -0.2" rot="0.0 -14.0 0.0">
+									<vox pos="0.0 0.0 -0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_2"/>
+								</group>
+								<group name="2" pos="1.1 0.6 -0.2" rot="0.0 14.0 0.0">
+									<vox pos="-0.1 0.0 -0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_2"/>
+								</group>
+								<vox tags="nocull" pos="0.0 0.6 -0.9" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_1">
+									<vox pos="-0.55 0.15 -0.025" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Front_Window">
+										<joint pos="0.0 0.4 -0.075" rot="0.0 90.0 -90.0" type="hinge" rotstrength="0.2" rotspring="0" limits="-0 45"/>
+									</vox>
+									<vox pos="0.55 0.15 -0.025" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Front_Window">
+										<joint pos="0.0 0.4 -0.075" rot="0.0 90.0 -90.0" type="hinge" rotstrength="0.2" rotspring="0" limits="-0 45"/>
+									</vox>
+									<vox tags="nocull" pos="0.95 0.6 0.0" rot="-90.0 0.0 0.0" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Light">
+										<light pos="0.05 0.2 -0.05" rot="-90.0 -180.0 0.0" type="cone" color="0.98 0.95 0.79" scale="1" penumbra="1" size="0.1 0.1" reach="5"/>
+									</vox>
+									<voxbox pos="0.855 0.45 -0.1" rot="0.0 0.0 5.0" size="2 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+								</vox>
+								<vox tags="nocull" pos="-1.1 0.6 0.5" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_3">
+									<group name="Bits" pos="0.1 0.3 0.5">
+										<voxbox tags="nocull" pos="-0.1 0.1 -0.1" rot="-150.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.1 0.1" rot="60.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.2 0.2" rot="120.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.4 0.2" rot="-30.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.5 0.1" rot="30.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.5 -0.1" rot="-120.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.4 -0.2" rot="-60.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="0.0 0.2 -0.2" rot="180.0 90.0 -30.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+									</group>
+								</vox>
+								<vox tags="nocull" pos="1.0 0.6 0.5" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_3">
+									<group name="Bits" pos="0.1 0.3 0.5">
+										<voxbox tags="nocull" pos="-0.1 0.1 -0.1" rot="-150.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.1 0.1" rot="60.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.2 0.2" rot="120.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.4 0.2" rot="-30.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.5 0.1" rot="30.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.5 -0.1" rot="-120.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="-0.1 0.4 -0.2" rot="-60.0 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										<voxbox tags="nocull" pos="0.0 0.2 -0.2" rot="180.0 90.0 -30.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+									</group>
+								</vox>
+								<vox tags="nocull" pos="0.0 0.0 1.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_4">
+									<vox tags="nocull No_Collide" pos="-0.85 1.15 0.025" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Window"/>
+									<vox tags="nocull No_Collide" pos="-0.55 1.15 0.025" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Window">
+										<joint pos="0.0 0.4 -0.025" rot="0.0 270.0 -90.0" type="hinge" rotstrength="0.13" rotspring="0" limits="-0 45"/>
+									</vox>
+									<vox tags="nocull No_Collide" pos="0.55 1.15 0.025" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Window">
+										<joint pos="0.0 0.4 -0.025" rot="0.0 270.0 -90.0" type="hinge" rotstrength="0.13" rotspring="0" limits="-0 45"/>
+									</vox>
+									<vox tags="nocull No_Collide" pos="0.85 1.15 0.025" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Window"/>
+								</vox>
+								<vox tags="nocull" pos="0.0 0.0 0.7" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_5">
+									<group pos="0.0 1.4 -0.4" rot="-43.0 0.0 0.0">
+										<vox pos="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_5b">
+											<voxbox tags="nocull" pos="0.721 0.51 -0.1" rot="180.0 180.0 34.3" size="1 6 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.05 0.175 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+											<voxbox tags="nocull" pos="0.6 0.41 -0.1" rot="0.0 0.0 90.0" size="1 12 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											<voxbox tags="nocull" pos="-0.721 0.51 -0.1" rot="-145.7 -90.0 0.0" size="1 6 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.0 0.175 0.05" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+										</vox>
+									</group>
+									<group pos="0.3 1.4 -0.4" rot="0.0 0.0 -43.0">
+										<vox pos="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_5c">
+											<voxbox tags="nocull" pos="0.1 0.51 -0.421" rot="0.0 -90.0 -55.7" size="6 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.175 0.05 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+											<voxbox tags="nocull" pos="0.1 0.51 0.3" rot="90.0 -180.0 0.0" size="1 6 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.0 -0.038 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+											<voxbox tags="nocull" pos="0.1 0.5 0.2" rot="-180.0 -180.0 0.0" size="1 5 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											<voxbox tags="nocull" pos="0.1 0.5 0.337" rot="-180.0 90.0 -7.0" size="1 5 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</vox>
+									</group>
+									<group pos="0.0 1.4 -0.1" rot="-10.0 0.0 0.0">
+										<vox pos="0.0 -0.0 0.1" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_5d">
+											<voxbox tags="nocull" pos="0.3648 -0.07314 0.0" rot="-90.0 0.0 47.0" size="5 1 1" offset="-1.0 0.0 -0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.325 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+											<voxbox tags="nocull" pos="-0.4 -0.05 0.0" rot="-90.0 0.0 0.0" size="8 1 1" offset="-1.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											<voxbox tags="nocull" pos="-0.3648 -0.0731 -0.1" rot="-90.0 180.0 47.0" size="5 1 1" offset="-1.0 0.0 -0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.325 0.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+										</vox>
+									</group>
+									<group pos="-0.3 1.4 -0.4" rot="0.0 0.0 43.0">
+										<vox pos="-0.1 0.0 0.0" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_5c">
+											<voxbox tags="nocull" pos="0.1 0.51 -0.421" rot="0.0 -90.0 -55.7" size="6 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.175 0.05 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+											<voxbox tags="nocull" pos="0.1 0.51 0.3" rot="90.0 -180.0 0.0" size="1 6 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.0 -0.038 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+											<voxbox tags="nocull" pos="0.1 0.5 0.2" rot="-180.0 -180.0 0.0" size="1 5 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											<voxbox tags="nocull" pos="0.1 0.5 0.337" rot="-180.0 90.0 -7.0" size="1 5 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</vox>
+									</group>
+								</vox>
+								<vox tags="nocull" pos="0.0 1.4 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_6">
+									<group pos="-0.9 0.0 -1.0">
+										<voxbox tags="nocull" pos="-0.2 0.0 0.1" rot="0.0 80.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+											<voxbox tags="nocull" pos="0.1 0.0 0.0" rot="0.0 -20.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.035 0.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+										</voxbox>
+										<voxbox tags="nocull" pos="0.1 0.0 -0.2" rot="0.0 -80.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+											<voxbox tags="nocull" pos="0.0 0.0 0.1" rot="0.0 20.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.0 0.0 0.035" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+										</voxbox>
+									</group>
+									<group pos="0.9 0.0 -1.0" rot="0.0 -90.0 0.0">
+										<voxbox tags="nocull" pos="-0.2 0.0 0.1" rot="0.0 80.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+											<voxbox tags="nocull" pos="0.1 0.0 0.0" rot="0.0 -20.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.035 0.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+										</voxbox>
+										<voxbox tags="nocull" pos="0.1 0.0 -0.2" rot="0.0 -80.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+											<voxbox tags="nocull" pos="0.0 0.0 0.1" rot="0.0 20.0 0.0" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+												<voxbox tags="nocull" pos="0.0 0.0 0.035" size="1 3 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+											</voxbox>
+										</voxbox>
+									</group>
+								</vox>
+								<vox tags="nocull" pos="0.0 1.75 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Air_Intake">
+									<group name="1" pos="-0.4 0.2 0.3" rot="0.0 0.0 11.5">
+										<vox tags="nocull" pos="-0.1 -0.2 -0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Air_Intake_1">
+											<group name="1" pos="-0.1 0.2 0.3" rot="0.0 0.0 22.0">
+												<vox tags="nocull" pos="-0.1 -0.2 -0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Air_Intake_2"/>
+											</group>
+										</vox>
+									</group>
+									<group name="2" pos="0.4 0.2 0.3" rot="0.0 0.0 -11.5">
+										<vox tags="nocull" pos="0.1 -0.2 -0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Air_Intake_1">
+											<group name="1" pos="0.1 0.2 0.3" rot="0.0 0.0 -22.0">
+												<vox tags="nocull" pos="0.1 -0.2 -0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Air_Intake_3"/>
+											</group>
+										</vox>
+									</group>
+								</vox>
+								<vox tags="nocull RHA=5" pos="0.0 0.5 1.6" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_7">
+									<group name="1" pos="-0.9 0.5 0.0" rot="0.0 0.0 7.0">
+										<vox tags="nocull RHA=5" pos="0.4 -0.1 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_7b">
+											<voxbox tags="nocull RHA=5" pos="0.507 0.0 -0.3" rot="0.0 -90.0 0.0" size="6 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</vox>
+									</group>
+									<group name="2" pos="0.9 0.5 0.0" rot="0.0 0.0 -7.0">
+										<vox tags="nocull RHA=5" pos="-0.5 -0.1 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Superstructure_7b">
+											<voxbox tags="nocull RHA=5" pos="-0.307 0.0 -0.3" rot="0.0 -90.0 0.0" size="6 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</vox>
+									</group>
+									<vox tags="nocull RHA=5 No_Collide" pos="-0.45 0.1 0.325" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Door_1">
+										<voxbox tags="nocull RHA=5 No_Collide" pos="0.3 0.4 0.0" rot="90.0 180.0 -7.0" size="7 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+											<voxbox tags="nocull RHA=5 No_Collide" pos="0.706 0.0 0.0" rot="0.0 -83.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</voxbox>
+										<voxbox tags="nocull RHA=5 No_Collide" pos="0.3 0.3 -0.1" rot="-180.0 -180.0 -7.0" size="6 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Door_1" offset="1.0 1.0 0.0">
+											<voxbox tags="nocull RHA=5 No_Collide" pos="0.605 0.0 0.0" rot="0.0 0.0 83.0" size="1 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Door_1" offset="6.0 1.0 0.0"/>
+										</voxbox>
+										<joint pos="0.4 0.2 -0.025" rot="-90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="-92 0"/>
+									</vox>
+									<vox tags="nocull RHA=5 No_Collide" pos="0.45 0.1 0.225" rot="0.0 180.0 0.0" prop="true" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Door_1">
+										<voxbox tags="nocull RHA=5 No_Collide" pos="0.3 0.4 0.0" rot="90.0 180.0 -7.0" size="7 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23">
+											<voxbox tags="nocull RHA=5 No_Collide" pos="0.706 0.0 0.0" rot="0.0 -83.0 0.0" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+										</voxbox>
+										<voxbox tags="nocull RHA=5 No_Collide" pos="0.3 0.3 -0.1" rot="-180.0 -180.0 -7.0" size="6 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Door_1" offset="1.0 1.0 0.0">
+											<voxbox tags="nocull RHA=5 No_Collide" pos="0.605 0.0 0.0" rot="0.0 0.0 83.0" size="1 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Door_1" offset="6.0 1.0 0.0"/>
+										</voxbox>
+										<joint pos="0.4 0.2 -0.075" rot="90.0 180.0 0.0" type="hinge" rotstrength="0.01" rotspring="0" limits="-92 0"/>
+									</vox>
+									<vox tags="nocull RHA=5" pos="-0.05 0.1 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong">
+										<voxbox tags="nocull RHA=5" pos="0.0 0.35 -0.1" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+									</vox>
+									<group name="Fins" pos="0.8 0.0 -0.1">
+										<vox pos="0.1 0.05 0.1" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="0.1 0.05 0.05" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="0.1 0.05 0.0" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="0.1 0.05 -0.05" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="0.1 0.05 -0.1" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="0.1 0.05 -0.15" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="0.1 0.05 -0.2" rot="0.0 120.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 0.1" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 0.05" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 0.0" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 -0.05" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 -0.1" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 -0.15" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+										<vox pos="-1.7 0.05 -0.2" rot="0.0 -30.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Prong"/>
+									</group>
+									<vox pos="-0.975 0.2 0.2" rot="90.0 0.0 0.0" texture="4 0.3" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Rear_Light">
+										<light pos="0.05 0.2 -0.05" rot="-90.0 0.0 0.0" type="area" color="1 0.1 0.1" size="0.1 0.1" reach="3" unshadowed="0.2" glare="0.1"/>
+									</vox>
+								</vox>
+							</group>
+							<group name="Interior" pos="0.0 0.0 0.0">
+								<group name="Seats" pos="0.0 0.2 -0.1">
+									<vox pos="0.6 0.2 0.7" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Seat"/>
+									<vox pos="0.6 0.2 -0.25" rot="0.0 180.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Seat"/>
+									<vox pos="0.6 0.1 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Seat"/>
+									<vox pos="-0.6 0.2 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Seat"/>
+									<vox pos="-0.6 0.2 -0.15" rot="0.0 -180.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Seat"/>
+									<vox pos="-0.6 0.1 -0.6" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Seat"/>
+								</group>
+								<group name="Floor" pos="0.0 0.2 0.1">
+									<vox pos="0.0 -0.1 -0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Floor"/>
+									<vox pos="0.4 -0.05 -1.35" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Lever"/>
+									<vox pos="0.7 -0.05 -1.35" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Lever"/>
+									<vox pos="0.25 0.05 -1.05" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Lever_1"/>
+									<vox pos="-0.35 0.15 -0.85" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Lever_1"/>
+								</group>
+							</group>
+							<group name="Transmission" pos="0.0 0.0 -1.45">
+								<vox tags="RHA=20 Part=Transmission" pos="-0.05 0.05 0.15" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Transmission"/>
+								<vox tags="RHA=10 Part=Transmission" pos="-0.1 0.2 1.05" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Trasmission_Box"/>
+								<vox tags="RHA=15 Part=Transmission" pos="-0.3 0.125 0.1" rot="5.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Transmission_3"/>
+								<vox tags="RHA=10 Part=Transmission" pos="0.0 0.15 -0.15" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Transmission_2"/>
+								<vox tags="RHA=10 Part=Transmission" pos="0.0 0.35 -0.45" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Transmission_Rod"/>
+								<vox pos="-0.95 0.2 -0.4" rot="30.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Transmission_Cover"/>
+								<vox pos="0.85 0.2 -0.4" rot="30.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Transmission_Cover"/>
+							</group>
+							<group name="Engine" pos="0.0 0.1 0.5">
+								<vox tags="Part=Engine RHA=25" pos="0.1 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Engine"/>
+								<vox pos="0.0 0.2 0.7" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Radiators"/>
+								<vox tags="Fuel_Size=110 RHA=5" pos="0.55 0.0 0.9" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Fuel_Tank">
+									<voxbox tags="nocull RHA=5" pos="-0.05 0.15 0.25" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.25 0.25 0.25"/>
+								</vox>
+								<vox tags="Fuel_Size=110 RHA=5" pos="-0.55 0.0 0.9" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Fuel_Tank">
+									<voxbox tags="nocull RHA=5" pos="-0.05 0.15 0.25" size="1 1 1" offset="0.0 0.0 0.0" material="metal" color="0.25 0.25 0.25"/>
+								</vox>
+								<vox pos="-0.35 1.6 0.5" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Exhaust_1"/>
+								<vox pos="-0.9 1.65 0.55" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Exhaust_2">
+									<location name="exhaust" tags="exhaust" pos="-0.2 0.05 -0.05" rot="0.0 -90.0 0.0"/>
+								</vox>
+								<vox pos="0.2 1.15 0.45" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Exhaust_3"/>
+							</group>
+							<group name="Locations" pos="1.0 0.2 -1.1">
+								<location tags="exit" pos="0.6 1.05 0.25"/>
+								<location name="Player" tags="player" pos="-0.35 1.05 0.25" rot="0.0 0.0 0.0">
+									<location name="player_seat" tags="name=player_seat" pos="-0.05 -0.6 -0.05" rot="90.0 0.0 0.0"/>
+									<location name="ik_head" tags="ik_head" pos="0.0 0.1 0.0" rot="0.0 90.0 0.0"/>
+									<location name="ik_hand_l" tags="ik_hand_l" pos="-0.2 -0.7 -0.4" rot="0.0 90.0 0.0"/>
+									<location name="ik_hand_r" tags="ik_hand_r" pos="0.1 -0.7 -0.4" rot="0.0 90.0 0.0"/>
+									<location name="ik_foot_l" tags="ik_foot_l" pos="-0.1 -0.95 -0.5" rot="0.0 90.0 40.0"/>
+									<location name="ik_foot_r" tags="ik_foot_r" pos="0.05 -0.95 -0.5" rot="0.0 90.0 40.0"/>
+								</location>
+								<location tags="vital" pos="-1.0 0.65 1.5"/>
+							</group>
+							<group name="Tracks_L" pos="-1.0 -0.4 -0.1" rot="0.0 180.0 0.0">
+								<light name="track" tags="track suspension" pos="0.05 0.075 1.55" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 0.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 0.1" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 -0.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 -1.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 -1.55" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.5 -2.235" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.375 -2.16" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.6 -2.235" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.775 -2.175" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.865 -2.075" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.9 -1.9" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.915 -1.7" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.965 -1.17" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.955 -0.775" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.01 -0.36" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.99 0.03" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.05 0.43" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.02 0.84" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.1 1.25" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.125 1.64" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.15 1.85" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.125 2.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.0 2.175" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.85 2.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.75 2.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.6 2.175" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.475 2.05" rot="0.0 0.0 0.0" size="0.05"/>
+							</group>
+							<group name="Tracks_R" pos="1.1 -0.4 -0.1" rot="0.0 180.0 0.0">
+								<light name="track" tags="track suspension" pos="0.05 0.075 1.55" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 0.8" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 0.1" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 -0.5" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 -1.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.075 -1.55" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.5 -2.235" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.375 -2.16" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.6 -2.235" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.775 -2.175" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.865 -2.075" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.9 -1.9" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.915 -1.7" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.965 -1.17" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.955 -0.775" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.01 -0.36" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.99 0.03" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.05 0.43" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.02 0.84" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.1 1.25" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.125 1.64" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.15 1.85" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.125 2.05" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 1.0 2.175" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.85 2.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.75 2.2" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.6 2.175" rot="0.0 0.0 0.0" size="0.05"/>
+								<light name="track" tags="track suspension" pos="0.05 0.475 2.05" rot="0.0 0.0 0.0" size="0.05"/>
+							</group>
+							<vox pos="-0.75 0.75 -2.05" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Lamp">
+								<voxbox pos="-0.05 0.0 0.0" rot="0.0 0.0 -90.0" size="2 1 1" offset="0.0 0.0 0.0" material="metal" color="0.33 0.32 0.23"/>
+								<light pos="0.0 0.1 -0.1" rot="0.0 180.0 0.0" type="cone" color="0.98 0.95 0.79" scale="1.5" penumbra="1" size="0.1 0.1" reach="10"/>
+							</vox>
+						</vox>
+						<group name="Wheels Left" pos="-0.9 0.1 0.0">
+							<wheel pos="0.0 0.45 1.8" rot="0.0 0.0 0.0" drive="1" travel="0 0 ">
+								<vox pos="0.002 -0.3 0.0" rot="0.0 180.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Gear"/>
+							</wheel>
+							<wheel pos="0.101 0.7 -1.949" rot="0.0 0.0 0.0" drive="1" steer="0" travel="0 0">
+								<vox pos="-0.098 -0.3 0.0" rot="0.0 180.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Gear"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -1.5" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 1.3" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -1.1" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -0.7" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -0.3" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 0.9" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 0.5" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 0.1" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+						</group>
+						<group name="Wheels Left" pos="1.2 0.1 0.0">
+							<wheel pos="-0.1 0.45 1.8" rot="0.0 0.0 0.0" drive="1" travel="0 0 ">
+								<vox pos="0.002 -0.3 0.0" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Gear"/>
+							</wheel>
+							<wheel pos="-0.199 0.7 -1.949" rot="0.0 0.0 0.0" drive="1" steer="0" travel="0 0">
+								<vox pos="0.102 -0.3 0.0" rot="0.0 0.0 0.0" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Gear"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -1.5" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 1.3" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -1.1" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -0.7" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 -0.3" rot="0.0 0.0 0.0" drive="1" steer="0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 0.9" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 0.5" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+							<wheel pos="-0.05 0.15 0.1" rot="0.0 0.0 0.0" drive="1" steer="-0.25" travel="-0.06 0.15">
+								<vox pos="0.0 -0.15 0.05" texture="7 0.4" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/C7P.vox" object="Wheel"/>
+							</wheel>
+						</group>
+					</body>
+				</vehicle>
+			</group>
+			<group name="tracks pieces" pos="-1.43 0.04 0.0" prop0="texture=12 0.5" prop1="blendtexture=5 0.15" prop2="tags=nocull">
+				<group name="20tracks" pos="0.1 0.0 0.0">
+					<instance pos="0.0 0.0 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+				</group>
+				<group name="20tracks" pos="0.1 0.2 0.0">
+					<instance pos="0.0 0.0 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+				</group>
+				<group name="20tracks" pos="0.1 0.4 0.0">
+					<instance pos="0.0 0.0 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+				</group>
+				<group name="20tracks" pos="0.1 0.6 0.0">
+					<instance pos="0.0 0.0 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+				</group>
+				<group name="20tracks" pos="0.1 0.8 0.0">
+					<instance pos="0.0 0.0 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.0 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.3" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.5" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.7" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+					<instance pos="0.0 0.1 0.9" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Cars, Trucks, Tractors &amp; Halftracks/Tractors/C7P/track.xml"/>
+				</group>
+			</group>
+		</script>
+	</group>
+</prefab>
+
