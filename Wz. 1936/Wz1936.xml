@@ -1,0 +1,138 @@
+<prefab version="1.7.0">
+	<group name="instance=MOD/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz1936.xml" pos="17.4 0.0 1.4" rot="0.0 0.0 0.0">
+		<script pos="0.0 -0.4 -1.3" rot="0.0 0.0 0.0" file="MOD/scripts/tralier.lua">
+			<script pos="0.0 0.6 0.4" file="MOD/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.lua">
+				<group name="Texture" pos="0.0 0.0 0.0" prop0="texture=12 0.5" prop1="blendtexture=5 0.15">
+					<vehicle name="Wz 1936" tags="TABS Name=wz1936 Passive" pos="0.0 -0.6 2.15" sound="0" spring="5" damping="3">
+						<body name="Hull" tags="Part=Hull" pos="0.0 0.6 -0.95" dynamic="true">
+							<vox pos="0.0 0.0 0.0" density="15" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Chassis">
+								<group name="Wheel" pos="0.05 -0.2 -0.1">
+									<wheel name="Wheel" pos="-0.45 0.35 0.05">
+										<vox pos="-0.1 -0.35 0.05" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Wheel"/>
+									</wheel>
+									<wheel name="Wheel" pos="0.35 0.35 0.05">
+										<vox pos="0.1 -0.35 0.05" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Wheel"/>
+									</wheel>
+								</group>
+								<location name="Player" tags="player" pos="-0.45 0.45 0.55" rot="0.0 165.0 0.0">
+									<location name="player_seat" tags="name=player_seat" pos="0.0 -0.2 -0.15" rot="-10.0 -180.0 0.0"/>
+									<location name="ik_head" tags="ik_head" pos="-0.05 0.2 0.3" rot="10.6 -86.4 -19.7"/>
+									<location name="ik_hand_l" tags="ik_hand_l" pos="0.25 0.05 0.5" rot="0.0 -90.0 0.0"/>
+									<location name="ik_hand_r" tags="ik_hand_r" pos="-0.2 -0.15 0.45" rot="0.0 -80.0 0.0"/>
+									<location name="ik_foot_l" tags="ik_foot_l" pos="0.1 -0.6 -0.55" rot="90.0 0.0 -70.0"/>
+									<location name="ik_foot_r" tags="ik_foot_r" pos="-0.15 -0.65 0.3" rot="0.0 -90.0 0.0"/>
+								</location>
+								<body name="Strut_L" pos="-0.2 0.0 0.9" dynamic="true">
+									<voxbox tags="nocull No_Collide" pos="0.0 0.0 -0.85" rot="0.0 0.0 90.0" size="2 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0">
+										<vox tags="nocull" pos="0.005 0.0 0.89" rot="0.0 -3.25 0.0" density="5" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L">
+											<vox tags="nocull" pos="-0.15 0.05 0.7" rot="0.0 0.0 -90.0" density="5" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_End"/>
+											<vox tags="nocull" pos="0.075 0.125 -0.25" rot="0.0 0.0 -90.0" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Seat"/>
+											<light tags="trailerhitch" pos="0.05 0.05 0.8" rot="0.0 0.0 0.0" color="0"/>
+										</vox>
+									</voxbox>
+									<joint pos="-0.05 0.1 -0.8" rot="-90.0 -90.0 0.0" type="hinge" rotstrength="0.05" rotspring="0.0" limits="-25 10"/>
+								</body>
+								<body name="Strut_R" pos="0.3 0.0 0.9" dynamic="true">
+									<voxbox tags="nocull No_Collide" pos="0.0 0.0 -0.85" rot="0.0 0.0 90.0" size="2 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_R" offset="0.0 0.0 0.0">
+										<vox tags="nocull" pos="0.005 0.0 0.89" rot="0.0 -3.25 0.0" density="5" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_R">
+											<vox tags="nocull" pos="-0.15 0.05 0.7" rot="0.0 0.0 -90.0" density="5" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_End"/>
+											<vox tags="nocull" pos="0.0 0.25 0.9" rot="0.0 0.0 -90.0" density="5" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Trailer_Hitch">
+												<light tags="trailerhook" pos="-0.1 0.05 -0.1" rot="0.0 0.0 0.0" color="0"/>
+												<light tags="trailerhook" pos="0.05 0.05 0.15" rot="0.0 0.0 0.0" color="0"/>
+											</vox>
+											<vox tags="nocull" pos="0.075 -0.025 -0.25" rot="0.0 0.0 -90.0" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Seat"/>
+										</vox>
+									</voxbox>
+									<joint pos="-0.05 0.1 -0.8" rot="-90.0 -90.0 0.0" type="hinge" rotstrength="0.05" rotspring="0.0" limits="-10 25"/>
+								</body>
+							</vox>
+						</body>
+						<body name="Turret" tags="Part=Turret Index=1  Rot_Speed=5" pos="-0.05 0.8 -1.05" dynamic="true">
+							<vox pos="0.0 0.0 0.0" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Turret">
+								<joint tags="Turret_Joint_X" pos="0.05 0.0 0.0" rot="-90.0 90.0 0.0" type="hinge" rotspring="0.0" limits="-25 25"/>
+								<light name="Commander View" tags="commanderView" pos="-0.3 0.8 0.4" rot="0.0 180.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+								<voxbox tags="nocull No_Collide" pos="-0.1 0.15 -0.05" rot="180.0 -110.0 0.0" size="2 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0">
+									<vox tags="nocull" pos="0.15 0.1 0.05" rot="-90.0 -90.0 0.0" density="1" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Crank_2"/>
+								</voxbox>
+								<vox tags="nocull" pos="0.3 0.075 0.075" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Box">
+									<vox tags="nocull" pos="0.0 0.0 0.05" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Box"/>
+								</vox>
+								<voxbox tags="nocull No_Collide" pos="0.0 0.2 0.1" rot="0.0 -97.0 0.0" strength="20" size="5 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0">
+									<vox tags="nocull" pos="0.586 -0.025 -0.011" rot="0.0 -83.0 0.0" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Gun_Shield"/>
+								</voxbox>
+								<vox tags="Part=Sight" pos="-0.25 0.3 0.1" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Sight">
+									<light name="Gun Sight" tags="Sight=7tp" pos="0.05 0.15 -0.35" rot="0.0 180.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+									<voxbox tags="nocull No_Collide" pos="0.1 -0.05 -0.15" size="1 1 2" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0"/>
+								</vox>
+								<group name="Struts" pos="0.1 0.3 0.0">
+									<voxbox tags="nocull No_Collide" pos="-0.2 0.0 0.1" rot="90.0 90.0 83.0" size="2 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0"/>
+									<voxbox tags="nocull No_Collide" pos="0.0 0.0 0.1" rot="90.0 90.0 83.0" size="2 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0"/>
+								</group>
+								<group name="Struts" pos="0.1 0.3 0.0">
+									<group pos="0.012 -0.3 -0.1" rot="0.0 50.0 0.0">
+										<voxbox tags="nocull No_Collide" pos="0.0 0.0 0.0" rot="0.0 0.0 25.0" size="4 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0">
+											<voxbox tags="nocull No_Collide" pos="0.4 0.0 0.1" rot="0.0 120.0 0.0" size="1 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0"/>
+										</voxbox>
+									</group>
+									<group pos="-0.112 -0.3 -0.1" rot="0.0 130.0 0.0">
+										<voxbox tags="nocull No_Collide" pos="-0.0 0.0 -0.1" rot="0.0 0.0 25.0" size="4 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0">
+											<voxbox tags="nocull No_Collide" pos="0.4 0.0 0.0" rot="0.0 -30.0 0.0" size="1 1 1" brush="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Strut_L" offset="0.0 0.0 0.0"/>
+										</voxbox>
+									</group>
+								</group>
+								<group name="Shield" pos="0.05 0.6 0.2" rot="-50.0 0.0 0.0">
+									<vox tags="nocull No_Collide RHA=4" pos="0.0 0.0 -0.1" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_1">
+										<group pos="0.0 0.0 -0.2" rot="30.0 0.0 0.0">
+											<vox tags="nocull No_Collide RHA=4" pos="0.0 0.0 -0.1" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_2">
+												<group pos="0.0 0.1 -0.2" rot="-25.0 0.0 0.0">
+													<vox tags="nocull No_Collide RHA=4" pos="0.0 -0.1 -0.1" rot="0.0 0.0 0.0" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_3"/>
+													<body pos="0.35 0.0 -0.2" rot="-0.0 0.0 0.0" dynamic="true">
+														<vox tags="nocull No_Collide RHA=4" pos="-0.05 -0.1 -0.1" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_4">
+															<joint pos="-0.1 0.05 0.1" rot="0.0 90.0 0.0" type="hinge" rotspring="0.0" limits="-75 100"/>
+															<joint pos="0.2 0.05 0.1" rot="0.0 90.0 0.0" type="hinge" rotspring="0.0" limits="-75 100"/>
+															<group pos="-0.2 0.0 -0.1" rot="21.0 0.0 0.0">
+																<vox tags="nocull No_Collide RHA=4" pos="0.2 0.0 -0.1" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_5"/>
+															</group>
+														</vox>
+													</body>
+													<body pos="-0.35 0.0 -0.2" rot="-0.0 0.0 0.0" dynamic="true">
+														<vox tags="nocull No_Collide RHA=4" pos="-0.05 -0.1 -0.1" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_4">
+															<joint pos="-0.1 0.05 0.1" rot="0.0 90.0 0.0" type="hinge" rotspring="0.0" limits="-75 100"/>
+															<joint pos="0.2 0.05 0.1" rot="0.0 90.0 0.0" type="hinge" rotspring="0.0" limits="-75 100"/>
+															<group pos="-0.2 0.0 -0.1" rot="21.0 0.0 0.0">
+																<vox tags="nocull No_Collide RHA=4" pos="0.2 0.0 -0.1" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Shield_5"/>
+															</group>
+														</vox>
+													</body>
+												</group>
+											</vox>
+										</group>
+									</vox>
+								</group>
+							</vox>
+						</body>
+						<body name="Cannon" tags="Part=Weapon Turret_Index=1 Rot_Speed=5" pos="-0.05 1.115 -2.3" dynamic="true">
+							<vox pos="0.0 -0.2 1.2" density="2" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Recoil_base">
+								<joint tags="Turret_Joint_Y" pos="0.0 0.15 0.1" rot="0.0 90.0 0.0" type="hinge" size="0.1" rotspring="0.0" limits="-10 25"/>
+								<joint pos="0.1 0.15 0.1" rot="0.0 90.0 0.0" type="hinge" size="0.1" rotspring="0.0" limits="-10 25"/>
+								<vox tags="nocull RHA=20 Part=Breech Barrel On_Barrel" pos="0.05 0.065 0.7" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Breach">
+									<light name="Cannon Emitter" tags="Casing_Emitter=wz37cannon" pos="0.0 0.15 0.1" type="cone" angle="20" size="0.5" reach="0.5"/>
+								</vox>
+								<vox tags="nocull RHA=10 Barrel" pos="0.0 0.115 -0.3" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel">
+									<vox tags="nocull RHA=10 Barrel" pos="0.09 0.0 -0.9" rot="0 180" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel_Brake"/>
+									<vox tags="nocull RHA=10 Barrel" pos="0.11 0.0 -0.9" rot="0 180" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel_Brake"/>
+									<vox tags="nocull RHA=10 Barrel" pos="0.11 0.01 -0.9" rot="0 180" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel_Brake"/>
+									<vox tags="nocull RHA=10 Barrel" pos="0.09 0.01 -0.9" rot="0 180" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel_Brake"/>
+									<vox tags="nocull RHA=10 Barrel" pos="0.09 -0.01 -0.9" rot="0 180" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel_Brake"/>
+									<vox tags="nocull RHA=10 Barrel" pos="0.11 -0.01 -0.9" rot="0 180" strength="20" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.vox" object="Barrel_Brake"/>
+								</vox>
+								<light name="Cannon Emitter" tags="Weapon ID=wz37cannon" pos="0.075 0.15 -1.25" rot="0.0 -180.0 0.0" type="cone" angle="20" size="0.5" reach="0.5"/>
+							</vox>
+						</body>
+					</vehicle>
+				</group>
+			</script>
+		</script>
+	</group>
+</prefab>
+
