@@ -1,7 +1,7 @@
 <prefab version="1.7.0">
-	<group name="instance=MOD/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz1936.xml" pos="17.4 0.0 1.4" rot="0.0 0.0 0.0">
+	<group name="instance=MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz1936.xml" pos="17.4 0.0 1.4" rot="0.0 0.0 0.0">
 		<script pos="0.0 -0.4 -1.3" rot="0.0 0.0 0.0" file="MOD/scripts/tralier.lua">
-			<script pos="0.0 0.6 0.4" file="MOD/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.lua">
+			<script pos="0.0 0.6 0.4" file="MOD/TABS/vehicles/Poland/WW2/Artillery/AT Guns/Wz. 1936/Wz 1936.lua">
 				<group name="Texture" pos="0.0 0.0 0.0" prop0="texture=12 0.5" prop1="blendtexture=5 0.15">
 					<vehicle name="Wz 1936" tags="TABS Name=wz1936 Passive" pos="0.0 -0.6 2.15" sound="0" spring="5" damping="3">
 						<body name="Hull" tags="Part=Hull" pos="0.0 0.6 -0.95" dynamic="true">
